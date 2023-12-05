@@ -1,0 +1,1389 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+	font-family: 'Zilla Slab', serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #702113;
+	background-color: #FBEEDA;
+}
+
+header {
+	background-color:#EDD975;
+	padding: 10px 10px;
+}
+
+h1{
+	font-weight: 700;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+
+h2{
+	font-weight: 400;
+}
+
+.logo {
+	float: left;
+	padding-bottom: 10px;
+	transition: transform .2s;
+}
+
+.logo:hover, .contact:hover, .about:hover, .dropbtn:hover{
+	transform: scale(1.1);
+}
+
+.contact, .about, .dropbtn{
+	transition: transform .2s;
+}
+
+nav {
+  	overflow: hidden;
+  	margin-right: 215px;
+  	padding: 5px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #702113;
+	font-size: 20px;
+	float: right;
+  	padding: 14px 16px;
+  	text-align: center;
+}
+
+/*dropdown bar starts --------------------------------------------------------------------*/
+		.movies {
+		  float: right;
+		  overflow: hidden;
+		}
+
+		.movies .dropbtn {
+		  font-size: 20px; 
+		  border: none;
+		  outline: none;
+		  color: #702113;
+		  padding: 14px 16px;
+		  background-color: inherit;
+		  font-family: inherit;
+		  margin: 0;
+		}
+
+		nav a:hover, .movies:hover .dropbtn {
+		  color: white;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #EAE7B0;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.dropdown-content a {
+		  float: none;
+		  color: #702113;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		}
+
+		.drop-rat:hover {
+			background-color: #A0BDDE;
+		}
+
+		.drop-enc:hover {
+			background-color: #AEC965;
+		}
+
+		.drop-luc:hover{ 
+			background-color: #8EDBD5;
+		}
+
+		.drop-tur:hover{
+			background-color: #F44E4E;
+		}
+
+		.drop-coc:hover{
+			background-color: #F0A8DA;
+		}
+
+		.drop-bra:hover{
+			background-color: #EBA24E;
+		}
+
+		.drop-pri:hover{
+			background-color: #91C691;
+		}
+
+		.movies:hover .dropdown-content {
+		  display: block;
+		}
+
+/*dropdown bar ends --------------------------------------------------------------------*/
+
+/*.parallax {
+  background-image: url(images/kitchen-parallax.png);
+  min-height: 206px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-img {
+	position: relative;
+  	text-align: right;
+  	overflow: hidden;
+}
+
+.intro-text {
+	position: absolute;
+    right: 150px;
+  	bottom: 100px;
+  	color: white;
+  	font-size: 40px;
+  	text-align: center;
+  	transform: translate(-50%, -50%);
+}
+
+.first-row {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	padding-top: 30px;
+	margin: 0px 200px;
+	flex-wrap: wrap;
+}
+
+.second-row {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	padding-top: 30px;
+	margin: 0px 330px;
+	flex-wrap: wrap;
+}
+
+/*hover icons --------------------------------------------------------------------*/
+
+/*ratatouille*/
+
+		.ratatouille {
+		  opacity: 1;
+		  transition: .5s ease;
+		  backface-visibility: hidden;
+		}
+
+		.rat-logo {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  margin:100px -110px;
+		 
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		}
+
+		.hover1:hover .ratatouille {
+		  opacity: 0.3;
+		}
+
+		.hover1:hover .rat-logo {
+		  opacity: 1;
+		}
+
+/*encanto hover*/
+
+		.encanto {
+		  opacity: 1;
+		  transition: .5s ease;
+		  backface-visibility: hidden;
+		}
+
+		.encanto-logo {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  margin:90px -110px;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		}
+
+		.hover2:hover .encanto {
+		  opacity: 0.3;
+		}
+
+		.hover2:hover .encanto-logo {
+		  opacity: 1;
+		}
+
+/*luca hover*/
+
+		.luca {
+		  opacity: 1;
+		  transition: .5s ease;
+		  backface-visibility: hidden;
+		}
+
+		.luca-logo {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  margin: 110px -110px;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		}
+
+		.hover3:hover .luca {
+		  opacity: 0.3;
+		}
+
+		.hover3:hover .luca-logo {
+		  opacity: 1;
+		}
+
+/*turning red hover*/
+
+		.turningred {
+		  opacity: 1;
+		  transition: .5s ease;
+		  backface-visibility: hidden;
+		}
+
+		.red-logo {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  margin:110px -110px;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		}
+
+		.hover4:hover .turningred {
+		  opacity: 0.3;
+		}
+
+		.hover4:hover .red-logo {
+		  opacity: 1;
+		}
+
+/*coco hover*/
+
+		.coco {
+		  opacity: 1;
+		  transition: .5s ease;
+		  backface-visibility: hidden;
+		}
+
+		.coco-logo {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  margin:110px -110px;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		}
+
+		.hover5:hover .coco {
+		  opacity: 0.3;
+		}
+
+		.hover5:hover .coco-logo {
+		  opacity: 1;
+		}
+
+/*brave hover*/
+
+		.brave {
+		  opacity: 1;
+		  transition: .5s ease;
+		  backface-visibility: hidden;
+		}
+
+		.brave-logo {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  margin:110px -110px;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		}
+
+		.hover6:hover .brave {
+		  opacity: 0.3;
+		}
+
+		.hover6:hover .brave-logo {
+		  opacity: 1;
+		}
+
+/*princess and the frog hover*/
+
+		.princessandfrog {
+		  opacity: 1;
+		  transition: .5s ease;
+		  backface-visibility: hidden;
+		}
+
+		.frog-logo {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  margin:95px -117px;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		}
+
+		.hover7:hover .princessandfrog {
+		  opacity: 0.3;
+		}
+
+		.hover7:hover .frog-logo {
+		  opacity: 1;
+		}
+
+
+section {
+	padding-bottom: 133px;
+}
+
+/*About Page --------------------------------------------------------------------*/
+
+	.welcome-intro {
+		margin: 100px 295px 20px;
+	}
+
+	.bio {
+		line-height: 25px;
+		padding-top: 20px;
+	}
+
+	.map {
+		width: 100%;
+		height: 630px;
+		background-color: #BE5434;
+	}
+
+	.map-img{
+		padding: 40px 310px;
+	}
+
+	.learn-statement{
+		padding: 30px 520px 0px;
+		color: #EDD975;
+	}
+
+	.triangle{
+		padding: 0px 700px;
+	}
+
+/*Contact Page --------------------------------------------------------------------*/
+
+/* contact form */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Submit button*/
+input[type=submit] {
+  background-color: #EDD975;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover submit button*/
+input[type=submit]:hover {
+  background-color: #B79A00;
+}
+
+/*background color*/
+.container {
+  border-radius: 5px;
+  background-color: #BE5434;
+  color: #FBEEDA;
+  padding: 20px 350px;
+}
+
+	.comment-page{
+		width: 100%;
+		height: 940px;
+		background-color: #BE5434;
+	}
+
+	.comment-title{
+		text-align: center;
+		color: #FBEEDA;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+
+/*Ratatouille Page --------------------------------------------------------------------*/
+
+	.rat-section1{
+		width: 100%;
+		height: 580px;
+		background-color: #3C3E64;
+		overflow: hidden;
+	}
+
+	.intro-text2{
+		position: absolute;
+	    right: 600px;
+	  	bottom: 150px;
+	  	color: white;
+	  	text-align: center;
+	  	
+	}
+
+	.recipe-rat-logo{
+		position: absolute;
+	    right: 620px;
+	  	bottom: 200px;
+	}
+
+	.light-text{
+		color: #FBEEDA;
+		padding: 0px 610px;
+		text-align: center;
+	}
+
+	.remy-images{
+		display: flex;
+	}
+
+	.light-text2{
+		color: #FBEEDA;
+		padding: 80px 360px;
+		text-align: center;
+	}
+
+	.remy {
+		float: right;
+		position: absolute;
+		padding: 280px 70px;
+		z-index: 1;
+	}
+
+	.emile {
+		float: right;
+		position: absolute;
+		padding: 280px 1070px;
+		z-index: 1;
+	}
+
+	.rat-section2{
+		height: 580px;
+		background-color: #FBEEDA;
+		width: 600px;
+		margin: 60px 100px 120px;
+		padding: 0px 270px;
+		overflow: hidden;
+	}
+
+	.rat-ingredients{
+		display: flex;
+		padding-top: 25px;
+		gap: 100px;
+		width: 900px;
+		line-height: 30px;
+	}
+
+	input[type="checkbox"] {
+          accent-color: saddlebrown;
+        }
+
+	.rat-section3{
+		width: 100%;
+		height: 580px;
+		background-color: #3C3E64;
+	}
+
+	.recipe-title{
+		color: #FBEEDA;
+		padding: 80px 610px 60px;
+		text-align: center;
+	}
+
+	.scroll-recipe{
+		overflow: auto;
+  		white-space: nowrap;
+  		display: flex;
+  		width: 900px;
+  		position: absolute;
+  		height: 400px;
+  		margin: 0px 280px;
+  		color: #FBEEDA;
+	}
+
+	.scroll-recipe a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	.recipe-step{
+		margin: 10px 70px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed gray;
+	}
+
+	.recipe-step1{
+		margin: 10px 70px 10px 0px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed gray;
+	}
+
+	.recipe-text{
+		margin: 0px 0px;
+		padding: 10px 0px;
+		width: 200px;
+		word-wrap: break-word;
+		white-space: initial;
+
+	}
+
+	.rat-section4{
+		width: 100%;
+		height: 300px;
+		background-color: #FBEEDA;
+		width: 600px;
+		margin: 60px 100px 120px;
+	}
+
+	.ratatouille-food{
+		padding: 0px 220px;
+	}
+
+	.le-fin{
+		padding-top: 60px;
+		text-align: center;
+	}
+
+/*Encanto Page --------------------------------------------------------------------*/
+
+	.enc-section1{
+		width: 100%;
+		height: 580px;
+		background-color: #FBEEDA;
+		overflow: hidden;
+	}
+
+	.enc-intro-text2{
+		position: absolute;
+	    right: 530px;
+	  	bottom: 150px;
+	  	color: white;
+	  	text-align: center;
+	  	
+	}
+
+	.encanto-recipe-logo{
+		position: absolute;
+	    right: 620px;
+	  	bottom: 200px;
+	}
+
+
+	.enc-light-text2{
+		color: #702113;
+		padding: 100px 360px;
+		text-align: center;
+	}
+
+	.mirabel {
+		float: right;
+		position: absolute;
+		padding: 300px 70px;
+		z-index: 1;
+	}
+
+	.julieta {
+		float: right;
+		position: absolute;
+		padding: 255px 1070px;
+		z-index: 1;
+	}
+
+	.enc-section2{
+		height: 360px;
+		background-color: #ACC99A;
+		width: 100%;
+		padding: 80px 270px;
+		color: #FFFF;
+		justify-content: center;
+	}
+
+	.enc-ingredients{
+		padding-top: 25px;
+		gap: 100px;
+		width: 400px;
+		line-height: 30px;
+	}
+
+	input[type="checkbox"] {
+          accent-color: saddlebrown;
+        }
+
+	.enc-section3{
+		width: 100%;
+		height: 580px;
+		background-color: #FFFFFF;
+	}
+
+	.enc-recipe-title{
+		color: #316558;
+		padding: 80px 610px 60px;
+		text-align: center;
+	}
+
+	.enc-scroll-recipe{
+		overflow: auto;
+  		white-space: nowrap;
+  		display: flex;
+  		width: 900px;
+  		position: absolute;
+  		height: 400px;
+  		margin: 0px 280px;
+  		color: #316558;
+	}
+
+	.scroll-recipe a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	.enc-recipe-step{
+		margin: 10px 70px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed #A28BB9;
+	}
+
+	.enc-recipe-step1{
+		margin: 10px 70px 10px 0px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed #A28BB9;
+	}
+
+	.enc-section4{
+		width: 100%;
+		height: 530px;
+		background-color: #A28BB9;
+	}
+
+	.encanto-food{
+		padding: 30px 390px;
+	}
+
+	.buen-provecho{
+		padding-top: 60px;
+		text-align: center;
+		color: white;
+	}
+
+/*Luca Page --------------------------------------------------------------------*/
+
+	.luc-section1{
+		width: 100%;
+		height: 580px;
+		background-color: #DAF6FB;
+		overflow: hidden;
+	}
+
+	.luc-intro-text2{
+		position: absolute;
+	    right: 540px;
+	  	bottom: 150px;
+	  	color: white;
+	  	text-align: center;
+	  	
+	}
+
+	.luca-recipe-logo{
+		position: absolute;
+	    right: 635px;
+	  	bottom: 200px;
+	}
+
+
+	.luc-light-text2{
+		color: #702113;
+		padding: 80px 360px;
+		text-align: center;
+	}
+
+	.alberto {
+		float: right;
+		position: absolute;
+		padding: 250px 70px;
+		z-index: 1;
+	}
+
+	.luca-drawing {
+		float: right;
+		position: absolute;
+		padding: 280px 1090px;
+		z-index: 1;
+	}
+
+	.luc-section2{
+		height: 360px;
+		background-color: #FFFFFF;
+		width: 100%;
+		padding: 80px 270px;
+		color: #702113;
+		justify-content: center;
+	}
+
+	.luc-ingredients{
+		padding-top: 25px;
+		gap: 100px;
+		width: 400px;
+		line-height: 30px;
+	}
+
+	input[type="checkbox"] {
+          accent-color: saddlebrown;
+        }
+
+	.luc-section3{
+		width: 100%;
+		height: 580px;
+		background-color: #FAD970;
+	}
+
+	.luc-recipe-title{
+		color: #702113;
+		padding: 80px 610px 60px;
+		text-align: center;
+	}
+
+	.luc-scroll-recipe{
+		overflow: auto;
+  		white-space: nowrap;
+  		display: flex;
+  		width: 900px;
+  		position: absolute;
+  		height: 400px;
+  		margin: 0px 280px;
+  		color: #702113;
+	}
+
+	.scroll-recipe a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	.luc-recipe-step{
+		margin: 10px 70px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed #DAF6FB;
+	}
+
+	.luc-recipe-step1{
+		margin: 10px 70px 10px 0px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed #FFFF;
+	}
+
+	.luc-section4{
+		width: 100%;
+		height: 560px;
+		background-color: #DAF6FB;
+	}
+
+	.luca-food{
+		padding: 30px 390px;
+	}
+
+	.buon-appetito{
+		padding-top: 60px;
+		text-align: center;
+		color: #702113;
+	}
+
+/*Turning Red Page --------------------------------------------------------------------*/
+
+	.red-section1{
+		width: 100%;
+		height: 580px;
+		background-color: #FFFF;
+		overflow: hidden;
+	}
+
+	.red-intro-text2{
+		position: absolute;
+	    right: 470px;
+	  	bottom: 120px;
+	  	color: #FFFF;
+	  	text-align: center;
+	  	
+	}
+
+	.red-recipe-logo{
+		position: absolute;
+	    right: 640px;
+	  	bottom: 180px;
+	}
+
+
+	.red-light-text2{
+		color: #702113;
+		padding: 90px 360px;
+		text-align: center;
+	}
+
+	.mei-lin {
+		float: right;
+		position: absolute;
+		padding: 340px 100px;
+		z-index: 1;
+	}
+
+	.red-panda {
+		float: right;
+		position: absolute;
+		padding: 270px 1070px;
+		z-index: 1;
+	}
+
+	.red-section2{
+		height: 360px;
+		background-color: #C93E44;
+		width: 100%;
+		padding: 80px 270px;
+		color: #FFFF;
+		justify-content: center;
+	}
+
+	.red-ingredients{
+		padding-top: 25px;
+		gap: 100px;
+		width: 400px;
+		line-height: 30px;
+	}
+
+	input[type="checkbox"] {
+          accent-color: saddlebrown;
+        }
+
+	.red-section3{
+		width: 100%;
+		height: 580px;
+		background-color: #FFFF;
+	}
+
+	.red-recipe-title{
+		color: #702113;
+		padding: 80px 610px 60px;
+		text-align: center;
+	}
+
+	.red-scroll-recipe{
+		overflow: auto;
+  		white-space: nowrap;
+  		display: flex;
+  		width: 900px;
+  		position: absolute;
+  		height: 400px;
+  		margin: 0px 280px;
+  		color: #702113;
+	}
+
+	.scroll-recipe a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	.red-recipe-step{
+		margin: 10px 70px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed #702113;
+	}
+
+	.red-recipe-step1{
+		margin: 10px 70px 10px 0px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed #702113;
+	}
+
+	.red-section4{
+		width: 100%;
+		height: 560px;
+		background-color: #C93E44;
+	}
+
+	.turningred-food{
+		padding: 30px 390px;
+	}
+
+	.red-enjoymeal{
+		padding-top: 60px;
+		text-align: center;
+		color: #FFFF;
+	}
+
+/*Coco Page --------------------------------------------------------------------*/
+
+	.coco-section1{
+		width: 100%;
+		height: 580px;
+		background-color: #FBEEDA;
+		overflow: hidden;
+	}
+
+	.coco-intro-text2{
+		position: absolute;
+	    right: 635px;
+	  	bottom: 150px;
+	  	color: #FFFF;
+	  	text-align: center;
+	  	
+	}
+
+	.coco-recipe-logo{
+		position: absolute;
+	    right: 595px;
+	  	bottom: 200px;
+	}
+
+
+	.coco-light-text2{
+		color: #702113;
+		padding: 100px 360px;
+		text-align: center;
+	}
+
+	.miguel {
+		float: right;
+		position: absolute;
+		padding: 280px 70px;
+		z-index: 1;
+	}
+
+	.abuelita {
+		float: right;
+		position: absolute;
+		padding: 280px 1100px;
+		z-index: 1;
+	}
+
+	.coco-section2{
+		height: 460px;
+		background-color: #F7A947;
+		width: 100%;
+		padding: 80px 270px;
+		color: #702113;
+		justify-content: center;
+	}
+
+	.coco-ingredients{
+		display: flex;
+		padding-top: 25px;
+		gap: 100px;
+		width: 800px;
+		line-height: 30px;
+	}
+
+	.coco-ingredients,.coco-white-text{
+		padding-left: 100px;
+	}
+
+	.chili-sauce, .masa-harina{
+		padding-top: 20px;
+	}
+
+	input[type="checkbox"] {
+          accent-color: saddlebrown;
+        }
+
+	.coco-section3{
+		width: 100%;
+		height: 580px;
+		background-color: #FBEEDA;
+	}
+
+	.coco-recipe-title{
+		color: #702113;
+		padding: 80px 610px 60px;
+		text-align: center;
+	}
+
+	.coco-scroll-recipe{
+		overflow: auto;
+  		white-space: nowrap;
+  		display: flex;
+  		width: 900px;
+  		position: absolute;
+  		height: 400px;
+  		margin: 0px 280px;
+  		color: #702113;
+	}
+
+	.scroll-recipe a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	.coco-recipe-step{
+		margin: 10px 70px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed #504A93;
+	}
+
+	.coco-recipe-step1{
+		margin: 10px 70px 10px 0px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed #504A93;
+	}
+
+	.coco-section4{
+		width: 100%;
+		height: 560px;
+		background-color: #504A93;
+	}
+
+	.coco-food{
+		padding: 30px 390px;
+	}
+
+	.coco-enjoymeal{
+		padding-top: 60px;
+		text-align: center;
+		color: #FFFF;
+	}
+
+
+/*Brave Page --------------------------------------------------------------------*/
+
+	.brave-section1{
+		width: 100%;
+		height: 580px;
+		background-color: #5F848A;
+		overflow: hidden;
+	}
+
+	.brave-intro-text2{
+		position: absolute;
+	    right: 470px;
+	  	bottom: 150px;
+	  	color: #FBEFDD;
+	  	text-align: center;
+	  	
+	}
+
+	.brave-recipe-logo{
+		position: absolute;
+	    right: 620px;
+	  	bottom: 200px;
+	}
+
+
+	.brave-light-text2{
+		color: #FBEFDD;
+		padding: 70px 360px;
+		text-align: center;
+	}
+
+	.merida {
+		float: right;
+		position: absolute;
+		padding: 290px 120px;
+		z-index: 1;
+	}
+
+	.bears {
+		float: right;
+		position: absolute;
+		padding: 280px 1070px;
+		z-index: 1;
+	}
+
+	.brave-section2{
+		height: 460px;
+		background-color: #FBEFDD;
+		width: 100%;
+		padding: 70px 270px;
+		color: #BE5434;
+		justify-content: center;
+	}
+
+	.brave-ingredients{
+		padding-top: 25px;
+		gap: 100px;
+		width: 400px;
+		line-height: 30px;
+	}
+
+	.icing{
+		padding-top: 20px;
+	}
+
+	input[type="checkbox"] {
+          accent-color: saddlebrown;
+        }
+
+	.brave-section3{
+		width: 100%;
+		height: 580px;
+		background-color: #5F848A;
+	}
+
+	.brave-recipe-title{
+		color: #FBEFDD;
+		padding: 80px 610px 60px;
+		text-align: center;
+	}
+
+	.brave-scroll-recipe{
+		overflow: auto;
+  		white-space: nowrap;
+  		display: flex;
+  		width: 900px;
+  		position: absolute;
+  		height: 400px;
+  		margin: 0px 280px;
+  		color: #FBEFDD;
+	}
+
+	.scroll-recipe a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	.brave-recipe-step{
+		margin: 10px 70px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed black;
+	}
+
+	.brave-recipe-step1{
+		margin: 10px 70px 10px 0px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed black;
+	}
+
+	.brave-section4{
+		width: 100%;
+		height: 560px;
+		background-color: #F07C47;
+	}
+
+	.brave-food{
+		padding: 30px 390px;
+	}
+
+	.brave-enjoymeal{
+		padding-top: 60px;
+		text-align: center;
+		color: #FBEFDD;
+	}
+
+/*Princess and the Frog Page --------------------------------------------------------------------*/
+
+	.frog-section1{
+		width: 100%;
+		height: 580px;
+		background-color: #EAE7B0;
+		overflow: hidden;
+	}
+
+	.frog-intro-text2{
+		position: absolute;
+	    right: 630px;
+	  	bottom: 140px;
+	  	color: #FFFF;
+	  	text-align: center;
+	  	
+	}
+
+	.frog-recipe-logo{
+		position: absolute;
+	    right: 610px;
+	  	bottom: 180px;
+	}
+
+
+	.frog-light-text2{
+		color: #702113;
+		padding: 80px 360px;
+		text-align: center;
+	}
+
+	.tiana {
+		float: right;
+		position: absolute;
+		padding: 320px 85px;
+		z-index: 1;
+	}
+
+	.tianas-place {
+		float: right;
+		position: absolute;
+		padding: 300px 1080px;
+		z-index: 1;
+	}
+
+	.frog-section2{
+		height: 460px;
+		background-color: #97982B;
+		width: 100%;
+		padding: 70px 270px;
+		color: #FBEEDA;
+		justify-content: center;
+	}
+
+	.frog-ingredients{
+		padding-top: 25px;
+		gap: 100px;
+		width: 400px;
+		line-height: 30px;
+	}
+
+	input[type="checkbox"] {
+          accent-color: saddlebrown;
+        }
+
+	.frog-section3{
+		width: 100%;
+		height: 580px;
+		background-color: #FBEEDA;
+	}
+
+	.frog-recipe-title{
+		color: #702113;
+		padding: 80px 610px 60px;
+		text-align: center;
+	}
+
+	.frog-scroll-recipe{
+		overflow: auto;
+  		white-space: nowrap;
+  		display: flex;
+  		width: 900px;
+  		position: absolute;
+  		height: 400px;
+  		margin: 0px 280px;
+  		color: #702113;
+	}
+
+	.scroll-recipe a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	.frog-recipe-step{
+		margin: 10px 70px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed #97982B;
+	}
+
+	.frog-recipe-step1{
+		margin: 10px 70px 10px 0px;
+  		padding: 20px;
+  		width: 200px;
+  		border: 2px dashed #97982B;
+	}
+
+	.frog-section4{
+		width: 100%;
+		height: 560px;
+		background-color: #EAE7B0;
+	}
+
+	.frog-food{
+		padding: 30px 343px;
+	}
+
+	.frog-enjoymeal{
+		padding-top: 60px;
+		text-align: center;
+		color: #702113;
+	}
+
+
+footer {
+	background-color:#EDD975;
+	display: flex;
+	padding-top: 30px;
+	height: 100px;
+	padding-inline: 500px;
+}
